@@ -62,10 +62,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administradores.aspx" />
+<<<<<<< HEAD
     <Content Include="CarritoDeCompras.aspx" />
     <Content Include="Clientes.aspx" />
 <<<<<<< HEAD
     <Content Include="Items.aspx" />
+=======
+    <Content Include="Categorias.aspx" />
+    <Content Include="Clientes.aspx" />
+<<<<<<< HEAD
+    <Content Include="NuevasCategorias.aspx" />
+>>>>>>> 4b22724bbd73b52b1f16ccc134bde35eddb9439c
 =======
     <Content Include="Producto.aspx" />
     <Content Include="NuevoProducto.aspx" />
@@ -92,12 +99,21 @@
     <Compile Include="Administradores.aspx.designer.cs">
       <DependentUpon>Administradores.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="CarritoDeCompras.aspx.cs">
       <DependentUpon>CarritoDeCompras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CarritoDeCompras.aspx.designer.cs">
       <DependentUpon>CarritoDeCompras.aspx</DependentUpon>
+=======
+    <Compile Include="Categorias.aspx.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categorias.aspx.designer.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+>>>>>>> 4b22724bbd73b52b1f16ccc134bde35eddb9439c
     </Compile>
     <Compile Include="Clientes.aspx.cs">
       <DependentUpon>Clientes.aspx</DependentUpon>
@@ -117,12 +133,21 @@
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Items.aspx.cs">
       <DependentUpon>Items.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Items.aspx.designer.cs">
       <DependentUpon>Items.aspx</DependentUpon>
+=======
+    <Compile Include="NuevasCategorias.aspx.cs">
+      <DependentUpon>NuevasCategorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NuevasCategorias.aspx.designer.cs">
+      <DependentUpon>NuevasCategorias.aspx</DependentUpon>
+>>>>>>> 4b22724bbd73b52b1f16ccc134bde35eddb9439c
 =======
     <Compile Include="Producto.aspx.cs">
       <DependentUpon>Producto.aspx</DependentUpon>
