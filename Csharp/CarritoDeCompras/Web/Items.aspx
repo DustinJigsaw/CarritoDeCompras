@@ -2,6 +2,9 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
+        <asp:Label ID="Label5" runat="server" Text="ITEMS:"></asp:Label>
+    </p>
+    <p>
         <br />
         <asp:Label ID="Label1" runat="server" Text="Cantidad"></asp:Label>
     </p>
@@ -19,15 +22,15 @@
         <asp:Label ID="Label3" runat="server" Text="Precio Unitario"></asp:Label>
     </p>
     <p>
-        <asp:TextBox ID="tbxPrecioUnitario" runat="server" ReadOnly="True"></asp:TextBox>
+        <asp:TextBox ID="tbxPrecioUnitario" runat="server" ReadOnly="True" Enabled="False"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label4" runat="server" Text="Sub-Total"></asp:Label>
     </p>
-    <asp:TextBox ID="tbxSubTotal" runat="server"></asp:TextBox>
+    <asp:TextBox ID="tbxSubTotal" runat="server" Enabled="False"></asp:TextBox>
     <br />
     <br />
-    <asp:Button ID="btnSubTotal" runat="server" Text="Aceptar" />
+    <asp:Button ID="btnSubTotal" runat="server" Text="Aceptar" OnClick="btnSubTotal_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:LinkButton ID="lbnCancelar" runat="server" href="CarritoDeCompras.aspx" Height="24px"> Cancelar</asp:LinkButton>
     <br />

@@ -18,5 +18,10 @@ namespace Web
         {
 
         }
+
+        protected void btnSubTotal_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CarritoDeCompras.aspx");
+        }
     }
 }

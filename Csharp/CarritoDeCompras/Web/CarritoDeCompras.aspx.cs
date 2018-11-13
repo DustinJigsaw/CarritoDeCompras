@@ -28,5 +28,10 @@ namespace Web
         {
 
         }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
