@@ -17,7 +17,7 @@ namespace Biblioteca
 
         public Item(int id,int cantidad,int idProducto,string nombreProducto,double precioUnitario,double subTotalProducto)
         {
-            this.id = id;
+            this.idItem = id;
             this.cantidad = cantidad;
             this.idProducto = idProducto;
             this.nombreProducto = nombreProducto;

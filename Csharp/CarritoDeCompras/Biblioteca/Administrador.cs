@@ -8,7 +8,7 @@ namespace Biblioteca
 {
     public class Administrador:Usuario
     {
-        Empresa empresa;
+        Empresa empresa { get; set; }
 
         public Administrador(string nombre,string email,string contraseña):base(nombre,email,contraseña)
         {
