@@ -67,7 +67,7 @@
     <Content Include="Items.aspx" />
     <Content Include="Categorias.aspx" />
     <Content Include="NuevasCategorias.aspx" />
-    <Content Include="Producto.aspx" />
+    <Content Include="Productos.aspx" />
     <Content Include="NuevoProducto.aspx" />
     <Content Include="Site.Master" />
     <Content Include="packages.config" />
@@ -128,20 +128,20 @@
     </Compile>
     <Compile Include="Items.aspx.designer.cs">
       <DependentUpon>Items.aspx</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="NuevasCategorias.aspx.cs">
       <DependentUpon>NuevasCategorias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NuevasCategorias.aspx.designer.cs">
       <DependentUpon>NuevasCategorias.aspx</DependentUpon>
-	</Compile>
-    <Compile Include="Producto.aspx.cs">
-      <DependentUpon>Producto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Producto.aspx.designer.cs">
-      <DependentUpon>Producto.aspx</DependentUpon>
+    <Compile Include="Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="NuevoProducto.aspx.cs">
       <DependentUpon>NuevoProducto.aspx</DependentUpon>

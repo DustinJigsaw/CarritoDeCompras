@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Administradores.aspx.cs" Inherits="Web.Administradores" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:LinkButton ID="LinkButton1" runat="server" href="Producto.aspx">NuevoProducto</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton1" runat="server" href="Productos.aspx">NuevoProducto</asp:LinkButton>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:LinkButton ID="LinkButton2" runat="server" >NuevaCategoria</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton2" runat="server" href="Categorias.aspx" >NuevaCategoria</asp:LinkButton>
     <br />
     <br />
     &nbsp;&nbsp;

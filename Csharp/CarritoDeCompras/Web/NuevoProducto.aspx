@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NuevoProducto.aspx.cs" Inherits="Web.Producto" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NuevoProducto.aspx.cs" Inherits="Web.NuevoProducto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -37,7 +37,7 @@
     <br />
     <asp:Button ID="btnCrear" runat="server" Height="26px" Text="Crear" Width="89px" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:LinkButton ID="LinkButton1" runat="server" href="Producto.aspx">Cancelar</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton1" runat="server" href="Productos.aspx">Cancelar</asp:LinkButton>
     <br />
     <br />
     <br />

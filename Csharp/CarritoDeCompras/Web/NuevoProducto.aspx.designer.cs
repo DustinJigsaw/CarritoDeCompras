@@ -10,7 +10,7 @@
 namespace Web {
     
     
-    public partial class Producto {
+    public partial class NuevoProducto {
         
         /// <summary>
         /// Control Label1.
