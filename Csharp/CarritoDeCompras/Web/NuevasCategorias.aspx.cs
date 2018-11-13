@@ -26,7 +26,7 @@ namespace Web
 
         protected void btnCrear_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Categorias.aspx");
         }
     }
 }
