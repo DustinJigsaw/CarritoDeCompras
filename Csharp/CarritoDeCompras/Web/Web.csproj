@@ -169,12 +169,9 @@
       <Name>Biblioteca</Name>
     </ProjectReference>
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-=======
->>>>>>> 30433f2d1f5b0bfcf2a7187a541cd1265c23ba55
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

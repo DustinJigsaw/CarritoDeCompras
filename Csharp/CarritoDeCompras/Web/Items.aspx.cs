@@ -25,7 +25,7 @@ namespace Web
         protected void btnSubTotal_Click(object sender, EventArgs e)
         {
 
-            int idProducto = Convert.ToInt32(ddlProducto.SelectedValue);
+            int idProducto = Convert.ToInt32(ddlProducto.SelectedValue.ToString());
 
             Producto unproducto = emp.productos.FirstOrDefault(x => x.id == idProducto);
 
