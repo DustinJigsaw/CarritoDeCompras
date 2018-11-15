@@ -10,17 +10,16 @@ namespace Biblioteca
     {
         public int idItem { get; set; }
         public int cantidad { get; set; }
-        public int idProducto { get; set; }
-        public string nombreProducto { get; set; }
+
+        public Producto producto { get; set; }
         public double precioUnitario { get; set; }
         public double subTotalProducto { get; set; }
 
-        public Item(int id,int cantidad,int idProducto,string nombreProducto,double precioUnitario,double subTotalProducto)
+        public Item(int id,int cantidad, Producto producto,double precioUnitario,double subTotalProducto)
         {
             this.idItem = id;
             this.cantidad = cantidad;
-            this.idProducto = idProducto;
-            this.nombreProducto = nombreProducto;
+            this.producto = producto;
             this.precioUnitario = precioUnitario;
             this.subTotalProducto = subTotalProducto;
         }
