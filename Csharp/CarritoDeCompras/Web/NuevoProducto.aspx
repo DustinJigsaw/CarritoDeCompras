@@ -35,7 +35,7 @@
     </asp:DropDownList>
     <br />
     <br />
-    <asp:Button ID="btnCrear" runat="server" Height="26px" Text="Crear" Width="89px" />
+    <asp:Button ID="btnCrear" runat="server" Height="26px" Text="Crear" Width="89px" OnClick="btnCrear_Click" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:LinkButton ID="LinkButton1" runat="server" href="Productos.aspx">Cancelar</asp:LinkButton>
     <br />
