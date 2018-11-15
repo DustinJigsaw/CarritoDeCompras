@@ -16,7 +16,7 @@
         <asp:TextBox ID="tbxTotal" runat="server" ReadOnly="True" Enabled="False"></asp:TextBox>
     </p>
     <p>
-        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
+        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" style="width: 67px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:LinkButton ID="lbnCancelar" runat="server" href="Clientes.aspx" OnClick="lbnCancelar_Click" Height="24px">Cancelar</asp:LinkButton>
     </p>

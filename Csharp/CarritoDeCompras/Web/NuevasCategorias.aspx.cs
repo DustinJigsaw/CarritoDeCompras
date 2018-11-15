@@ -31,10 +31,15 @@ namespace Web
 
             var categoria = new Categoria(Convert.ToInt32(txtId.Text), txtNombre.Text, txtDescripcion.Text);
 
-           var odb = OdbFactory.Open("CarritoDeCompra.db");
-           odb.Close();
+            var odb = OdbFactory.Open("C:\\Users\\PC08\\Desktop\\CarritoDeCompra\\CarritoDeCompra.db");
+         
 
            odb.Store(categoria);
+           odb.Close();
+        }
+
+        protected void txtNombre_TextChanged(object sender, EventArgs e)
+        {
 
         }
 

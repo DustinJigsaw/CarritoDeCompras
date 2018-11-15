@@ -5,6 +5,12 @@
         <asp:Label ID="Label5" runat="server" Text="ITEMS:"></asp:Label>
     </p>
     <p>
+        <asp:Label ID="lblId" runat="server" Text="ID"></asp:Label>
+    </p>
+    <p>
+        <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
+    </p>
+    <p>
         <br />
         <asp:Label ID="Label1" runat="server" Text="Cantidad"></asp:Label>
     </p>

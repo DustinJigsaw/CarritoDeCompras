@@ -7,7 +7,7 @@
     <p>
         &nbsp;
         <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtNombre" runat="server" OnTextChanged="txtNombre_TextChanged"></asp:TextBox>
     </p>
 &nbsp;&nbsp;
     <asp:Label ID="Label3" runat="server" Text="Id"></asp:Label>
