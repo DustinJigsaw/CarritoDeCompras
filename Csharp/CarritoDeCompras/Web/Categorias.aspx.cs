@@ -29,7 +29,7 @@ namespace Web
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var odb1 = OdbFactory.Open("CarritoDeCompra.db");
+            var odb1 = OdbFactory.Open("C:\\Users\\PC08\\Desktop\\CarritoDeCompra\\CarritoDeCompra.db");
             
                 var categorias = odb1.QueryAndExecute<Categoria>();
                 odb1.Close();
