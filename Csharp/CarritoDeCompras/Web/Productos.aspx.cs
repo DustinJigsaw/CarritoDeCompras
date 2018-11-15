@@ -21,9 +21,16 @@ namespace Web
             }
         }
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void btnBorrar_Click(object sender, EventArgs e)
         {
-           
+            using (var obd = OdbFactory.Open("C:\\Users\\PC08\\Desktop\\cd\\CarritoDeCompra.db"))
+            {
+                var productos = obd.QueryAndExecute<Producto>();
+                //var art = productos.First();
+                obd.Delete(art);
+                grdProductos.DataSource = productos;
+                grdProductos.DataBind();
+            }
         }
 
     }
