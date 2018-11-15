@@ -10,7 +10,7 @@
 namespace Web {
     
     
-    public partial class Categoria {
+    public partial class Categorias {
         
         /// <summary>
         /// Control lblCategoria.
