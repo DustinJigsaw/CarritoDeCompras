@@ -5,9 +5,20 @@
         <br />
     </p>
     <p>
-        &nbsp; &nbsp;<asp:TextBox ID="tbxTexto" runat="server"></asp:TextBox>
+        &nbsp;
+        <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
     </p>
-    <p>
+&nbsp;&nbsp;
+    <asp:Label ID="Label3" runat="server" Text="Id"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:TextBox ID="txtId" runat="server" Width="128px"></asp:TextBox>
+    <br />
+    <br />
+    <asp:Label ID="Label4" runat="server" Text="Descripcion"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:TextBox ID="txtDescripcion" runat="server"></asp:TextBox>
+&nbsp;<p>
 
         &nbsp; &nbsp;&nbsp;<asp:Button ID="btnCrear" runat="server" Text="Crear" Height="24px" OnClick="btnCrear_Click" />
         &nbsp;&nbsp;

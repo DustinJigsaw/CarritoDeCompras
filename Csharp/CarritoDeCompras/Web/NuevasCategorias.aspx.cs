@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using NDatabase;
+using Biblioteca;
 
 namespace Web
 {
@@ -26,7 +28,17 @@ namespace Web
 
         protected void btnCrear_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Categorias.aspx");
+
+            var categoria = new Categoria(Convert.ToInt32(txtId.Text), txtNombre.Text, txtDescripcion.Text);
+
+           var odb = OdbFactory.Open("CarritoDeCompra.db");
+           odb.Close();
+
+           odb.Store(categoria);
+
         }
+
+       
+
     }
 }

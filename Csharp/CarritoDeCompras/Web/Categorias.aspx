@@ -6,7 +6,7 @@
     <asp:LinkButton ID="lbnCrearCategoria" runat="server"  href="NuevasCategorias.aspx" OnClick="lbnCrearCategoria_Click">Crear Categoria</asp:LinkButton>
     <br />
     <br />
-    <asp:GridView ID="GridView1" runat="server">
+    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
     </asp:GridView>
     <br />
     <br />

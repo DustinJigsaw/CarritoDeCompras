@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using NDatabase;
+using Biblioteca;
 
 namespace Web
 {
@@ -24,5 +26,18 @@ namespace Web
         {
 
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var odb1 = OdbFactory.Open("CarritoDeCompra.db");
+            
+                var categorias = odb1.QueryAndExecute<Categoria>();
+                odb1.Close();
+
+                Response.Redirect("Categorias.aspx");
+
+            
+        }
+    
     }
 }
