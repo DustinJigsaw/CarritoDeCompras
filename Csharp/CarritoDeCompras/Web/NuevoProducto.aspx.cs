@@ -28,10 +28,10 @@ namespace Web
             Producto producto = new Producto(Convert.ToInt32(txtid.Text),txtnom.Text,Convert.ToInt32(txtCodBarra.Text),
                 Convert.ToDouble(txtPrecioUni.Text),txtDescripcion.Text, unaCategoria);
 
-            var odb = OdbFactory.Open("CarritoDeCompras.db");
+            var odb = OdbFactory.Open("C:\\Users\\PC08\\Desktop\\cd\\CarritoDeCompras.db");
                 odb.Store(producto);
                 odb.Close();
-                Response.Redirect("Categorias.aspx");
+                Response.Redirect("Productos.aspx");
         }
     }
 }

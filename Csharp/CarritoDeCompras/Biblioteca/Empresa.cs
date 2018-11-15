@@ -18,6 +18,8 @@ namespace Biblioteca
             productos = new List<Producto>();
             categorias = new List<Categoria>();
             administradores = new List<Administrador>();
+
+            categorias.Add(new Categoria { id = 1, nombre = "Almacen", descripcion = "Suena muy feo" });
         }
     }
 }

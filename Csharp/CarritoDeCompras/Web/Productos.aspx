@@ -6,7 +6,7 @@
         <asp:Label ID="Label1" runat="server" Text="Lista de productos"></asp:Label>
     </p>
     <p>
-        <asp:GridView ID="GridView1" runat="server">
+        <asp:GridView ID="grdProductos" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
         </asp:GridView>
     </p>
     <p>
