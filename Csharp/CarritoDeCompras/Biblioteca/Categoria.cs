@@ -17,5 +17,10 @@ namespace Biblioteca
             this.nombre = nombre;
             this.descripcion = descripcion;
         }
+
+        public Categoria()
+        {
+            // TODO: Complete member initialization
+        }
     }
 }
