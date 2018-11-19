@@ -1,23 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Productos.aspx.cs" Inherits="Web.Productos" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-        <asp:Label ID="Label1" runat="server" Text="Lista de productos"></asp:Label>
-    </p>
-    <p>
-        <asp:GridView ID="grdProductos" runat="server">
-        </asp:GridView>
-    </p>
-    <p>
-        &nbsp;
-        <asp:Button ID="btnBorrar" runat="server" OnClick="btnBorrar_Click" Text="Borrar producto" Width="137px" />
-&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:LinkButton ID="LinkButton2" runat="server" href="Administradores.aspx">Cancelar</asp:LinkButton>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:LinkButton ID="LinkButton1" runat="server" href="NuevoProducto.aspx">Crear producto</asp:LinkButton>
-    </p>
-    <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
+    <h1><asp:Label ID="Label1" runat="server" Text="Lista de productos"></asp:Label></h1>
+    <hr />
+    <asp:GridView ID="GridView1" runat="server">
+    </asp:GridView>
+    <hr />
+    <asp:LinkButton ID="LinkButton1" runat="server" href="NuevoProducto.aspx">Nuevo Producto</asp:LinkButton>
+    <br />
+    <br />
+    <asp:LinkButton ID="LinkButton2" runat="server" href="Administradores.aspx">Volver</asp:LinkButton>
 </asp:Content>

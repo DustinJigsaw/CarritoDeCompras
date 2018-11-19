@@ -22,15 +22,6 @@ namespace Web {
         protected global::System.Web.UI.WebControls.Label lblCategoria;
         
         /// <summary>
-        /// Control lbnCrearCategoria.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbnCrearCategoria;
-        
-        /// <summary>
         /// Control GridView1.
         /// </summary>
         /// <remarks>
@@ -38,5 +29,14 @@ namespace Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+        
+        /// <summary>
+        /// Control lbnCrearCategoria.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbnCrearCategoria;
     }
 }
