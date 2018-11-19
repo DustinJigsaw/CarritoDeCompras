@@ -23,15 +23,18 @@ namespace Web
         {
             int idCategoria = Convert.ToInt32(ddlcategoria.SelectedValue);
 
+            //TODO: unicamente debe leer las categorias ingresadas por el usuario, no debe quedar nada hardcodeado
             Categoria unaCategoria = emp.categorias.FirstOrDefault(x => x.id == idCategoria);
 
             Producto producto = new Producto(Convert.ToInt32(txtid.Text),txtnom.Text,Convert.ToInt32(txtCodBarra.Text),
                 Convert.ToDouble(txtPrecioUni.Text),txtDescripcion.Text, unaCategoria);
 
-            var odb = OdbFactory.Open("C:\\Users\\PC08\\Desktop\\cd\\CarritoDeCompras.db");
+            using (var odb = OdbFactory.Open("D:\\CarritoDeCompras.db"))
+            {
                 odb.Store(producto);
-                odb.Close();
-                Response.Redirect("Productos.aspx");
+            }
+             
+            Response.Redirect("Productos.aspx");
         }
     }
 }
