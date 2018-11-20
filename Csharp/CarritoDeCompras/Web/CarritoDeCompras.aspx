@@ -3,7 +3,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         <br />
-        <asp:LinkButton ID="LlbnNuevoItem" runat="server" href="Items.aspx" OnClick="LlbnNuevoItem_Click">Nuevo Item</asp:LinkButton>
+        <asp:LinkButton ID="LlbnNuevoItem" runat="server" href="Items.aspx">Nuevo Item</asp:LinkButton>
     </p>
     <p>
         <asp:Label ID="Label1" runat="server" Text="Listado"></asp:Label>

@@ -33,11 +33,6 @@ namespace Web
             }
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void grdProductos_SelectedIndexChanged(object sender, EventArgs e)
         {
 

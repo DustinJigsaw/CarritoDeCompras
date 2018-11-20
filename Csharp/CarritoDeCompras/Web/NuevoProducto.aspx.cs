@@ -25,7 +25,6 @@ namespace Web
                 {
                     ddlcategoria.Items.Add(new ListItem { Value = categoria.id.ToString(), Text = categoria.nombre });
                 }
-                Response.Redirect("Categorias.aspx");
             }
         }
 

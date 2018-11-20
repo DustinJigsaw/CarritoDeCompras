@@ -15,22 +15,17 @@ namespace Web
         {
             ddlProducto.Items.Clear();
             //emp.productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
-            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompras.db"))
             {
-                //var productos = odb1.QueryAndExecute<Producto>();
+                var productos = odb1.QueryAndExecute<Producto>();
                 //productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
 
-                var productos = Items.
-               
-            }
-
-           
-        }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-                Response.Redirect("CarritoDeCompras.aspx");
+                foreach (var producto in productos)
+                {
+                    ddlProducto.Items.Add(new ListItem { Value = producto.id.ToString(), Text = producto.nombre });
+                }
+                //Response.Redirect("CarritoDeCompra.aspx");
+            }           
         }
 
         protected void btnSubTotal_Click(object sender, EventArgs e)
