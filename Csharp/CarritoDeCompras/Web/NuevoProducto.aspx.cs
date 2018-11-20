@@ -16,7 +16,17 @@ namespace Web
         protected void Page_Load(object sender, EventArgs e)
         {
             ddlcategoria.Items.Clear();
-            emp.categorias.ForEach(x => ddlcategoria.Items.Add(new ListItem(x.nombre, x.id.ToString())));
+            //emp.categorias.ForEach(x => ddlcategoria.Items.Add(new ListItem(x.nombre, x.id.ToString())));
+   
+            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            {
+                var categorias = odb1.QueryAndExecute<Categoria>();
+                foreach (var categoria in categorias)
+                {
+                    ddlcategoria.Items.Add(new ListItem { Value = categoria.id.ToString(), Text = categoria.nombre });
+                }
+                Response.Redirect("Categorias.aspx");
+            }
         }
 
         protected void btnCrear_Click(object sender, EventArgs e)
@@ -37,6 +47,16 @@ namespace Web
             Response.Redirect("Productos.aspx");
         }
 
-     
+
+        protected void ddlcategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

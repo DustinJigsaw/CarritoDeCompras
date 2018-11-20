@@ -8,7 +8,7 @@
     <p>
         <asp:Label ID="Label1" runat="server" Text="Listado"></asp:Label>
     </p>
-    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+    <asp:GridView ID="grdproductos" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
     </asp:GridView>
     <p>
         <asp:Label ID="Label2" runat="server" Text="Total"></asp:Label>

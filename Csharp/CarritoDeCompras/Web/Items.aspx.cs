@@ -14,16 +14,19 @@ namespace Web
         protected void Page_Load(object sender, EventArgs e)
         {
             ddlProducto.Items.Clear();
-            emp.productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
+            //emp.productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
+            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            {
+                var productos = odb1.QueryAndExecute<Producto>();
+                emp.productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
+            }
+
+           
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
-            {
-                var productos = odb1.QueryAndExecute<Producto>();
-                odb1.Close();
-            }
+          
                 Response.Redirect("CarritoDeCompras.aspx");
         }
 

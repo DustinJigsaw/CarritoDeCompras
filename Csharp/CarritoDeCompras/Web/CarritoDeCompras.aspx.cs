@@ -14,18 +14,29 @@ namespace Web
         Empresa emp = new Empresa();
         protected void Page_Load(object sender, EventArgs e)
         {
-            ddlProducto.Items.Clear();
-            emp.productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
+            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            {
+                var productos = odb1.QueryAndExecute<Producto>();
+                grdproductos.DataSource = productos;
+                grdproductos.DataBind();
+            }
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            {
 
+                var productos = odb1.QueryAndExecute<Productos>();
+                //odb1.Close();
+
+                Response.Redirect("CarritoDeCompras.aspx");
+            }
         }
 
         protected void lbnCancelar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Administradores.aspx");
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
