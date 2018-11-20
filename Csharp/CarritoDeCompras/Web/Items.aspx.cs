@@ -19,7 +19,12 @@ namespace Web
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            {
+                var productos = odb1.QueryAndExecute<Producto>();
+                odb1.Close();
+            }
+                Response.Redirect("CarritoDeCompras.aspx");
         }
 
         protected void btnSubTotal_Click(object sender, EventArgs e)
