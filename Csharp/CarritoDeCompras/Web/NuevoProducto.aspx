@@ -31,13 +31,13 @@
     <br />
     &nbsp;<asp:Label ID="Label5" runat="server" Text="Categoria"></asp:Label>
     &nbsp;
-    <asp:DropDownList ID="ddlcategoria" runat="server">
+    <asp:DropDownList ID="ddlcategoria" runat="server" OnSelectedIndexChanged="ddlcategoria_SelectedIndexChanged">
     </asp:DropDownList>
     <br />
     <br />
     <asp:Button ID="btnCrear" runat="server" Height="26px" Text="Crear" Width="89px" OnClick="btnCrear_Click" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:LinkButton ID="LinkButton1" runat="server" href="Productos.aspx">Cancelar</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton1" runat="server" href="Productos.aspx" OnClick="LinkButton1_Click">Cancelar</asp:LinkButton>
     <br />
     <br />
     <br />

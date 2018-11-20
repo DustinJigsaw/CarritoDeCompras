@@ -19,7 +19,11 @@ namespace Biblioteca
             categorias = new List<Categoria>();
             administradores = new List<Administrador>();
 
-            categorias.Add(new Categoria { id = 1, nombre = "Almacen", descripcion = "Suena muy feo" });
+            //using (var odb = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            //{
+
+            //}
+            //categorias.Add(new Categoria { id = 1, nombre = "Almacen", descripcion = "Suena muy feo" });
         }
     }
 }

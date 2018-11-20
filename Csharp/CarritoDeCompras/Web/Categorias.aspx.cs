@@ -13,7 +13,12 @@ namespace Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            {
+                var categorias = odb1.QueryAndExecute<Categoria>();
+                grdCategorias.DataSource = categorias;
+                grdCategorias.DataBind();
+            }
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -39,6 +44,11 @@ namespace Web
             }
 
             
+        }
+
+        protected void lbnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Administradores.aspx");
         }
     
     }
