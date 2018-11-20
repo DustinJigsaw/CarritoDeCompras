@@ -12,12 +12,12 @@
 &nbsp;&nbsp;
     <asp:Label ID="Label3" runat="server" Text="Id"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="txtId" runat="server" Width="128px"></asp:TextBox>
+    <asp:TextBox ID="txtId" runat="server" Width="128px" OnTextChanged="txtId_TextChanged"></asp:TextBox>
     <br />
     <br />
     <asp:Label ID="Label4" runat="server" Text="Descripcion"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="txtDescripcion" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtDescripcion" runat="server" style="height: 22px"></asp:TextBox>
 &nbsp;<p>
 
         &nbsp; &nbsp;&nbsp;<asp:Button ID="btnCrear" runat="server" Text="Crear" Height="24px" OnClick="btnCrear_Click" />

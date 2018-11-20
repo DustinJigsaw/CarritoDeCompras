@@ -29,12 +29,14 @@ namespace Web
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db");
-            
+            using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
+            {
+
                 var categorias = odb1.QueryAndExecute<Categoria>();
-                odb1.Close();
+                //odb1.Close();
 
                 Response.Redirect("Categorias.aspx");
+            }
 
             
         }
