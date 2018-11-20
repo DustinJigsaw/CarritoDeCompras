@@ -17,8 +17,11 @@ namespace Web
             //emp.productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
             using (var odb1 = OdbFactory.Open("D:\\CarritoDeCompra.db"))
             {
-                var productos = odb1.QueryAndExecute<Producto>();
-                emp.productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
+                //var productos = odb1.QueryAndExecute<Producto>();
+                //productos.ForEach(x => ddlProducto.Items.Add(new ListItem(x.nombre, x.id.ToString())));
+
+                var productos = Items.
+               
             }
 
            
