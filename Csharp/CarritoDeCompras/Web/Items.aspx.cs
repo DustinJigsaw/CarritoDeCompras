@@ -51,5 +51,10 @@ namespace Web
 
             Response.Redirect("CarritoDeCompras.aspx");
         }
+
+        protected void SelecionarItem(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -21,7 +21,7 @@
         <asp:Label ID="Label2" runat="server" Text="Producto"></asp:Label>
     </p>
     <p>
-        <asp:DropDownList ID="ddlProducto" runat="server">
+        <asp:DropDownList ID="ddlProducto" runat="server" OnSelectedIndexChanged="SelecionarItem">
         </asp:DropDownList>
     </p>
     <p>
